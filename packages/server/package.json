@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Bhagya sah",
+  "license": "MIT",
+  "dependencies": {
+    "app-node": "^0.2.5",
+    "bluebird": "^3.5.1",
+    "express": "^4.16.3",
+    "redirector-common": "^1.0.0",
+    "sqlite": "^2.9.2"
+  },
+  "scripts": {
+    "test": "jest -o",
+    "server-mon": "nodemon --exec ./node_modules/.bin/babel-node  -- src/index.js"
+  },
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.5",
+    "babel-jest": "^23.2.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-import-export": "^1.0.2",
+    "jest": "^23.2.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
