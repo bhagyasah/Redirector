@@ -1,6 +1,8 @@
+import login from './../auth/login';
 
-export default (req, res) => {
-  const { username, password } = req.query;
-  res.send('login success');
-  console.log('usernmae = ', username, 'password=', password);
-}
+export default async (req, res) => {
+  const { userId } = req.query;
+  const status = await login(userId);
+  res.send(JSON.stringify(status));
+};
+

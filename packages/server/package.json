@@ -12,7 +12,7 @@
     "sqlite": "^2.9.2"
   },
   "scripts": {
-    "test": "jest -o",
+    "test": "jest",
     "server-mon": "nodemon --exec ./node_modules/.bin/babel-node  -- src/index.js"
   },
   "devDependencies": {
@@ -29,3 +29,4 @@
     "testEnvironment": "node"
   }
 }
+

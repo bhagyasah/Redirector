@@ -4,11 +4,7 @@ CREATE TABLE IF NOT EXISTS User(
   userName TEXT NOT NULL,
   email TEXT NOT NULL,
   gender TEXT NOT NULL,
-  regToken TEXT NOT NULL,
-
-  -- Constraints
-  CONSTRAINT User_reg_token UNIQUE (regToken)
-
+  regToken TEXT NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS GPSLocation(
@@ -25,8 +21,6 @@ CREATE TABLE IF NOT EXISTS Contacts(
   contactNo INTEGER NOT NULL,
   contactName TEXT NOT NULL,
   userId INTEGER NOT NULL,
-  image BLOB,
-
   -- Constraints
   CONSTRAINT Contacts_fk_userId FOREIGN KEY (userId) REFERENCES User(id)
 );
@@ -36,14 +30,14 @@ CREATE TABLE IF NOT EXISTS CalLogs(
   contactName TEXT NOT NULL,
   contactNo TEXT NOT NULL,
   timeStamps INTEGER NOT NULL,
-  callDration INTEGER NOT NULL,
+  callDuration INTEGER NOT NULL,
    -- Constraints
    CONSTRAINT CalLogs_fk_userId FOREIGN KEY (userId) REFERENCES User(id)
 );
 
 CREATE TABLE IF NOT EXISTS Sms (
   timeStamps INTEGER NOT NULL,
-  contactNum INTEGER NOT NULL,
+  contactNo INTEGER NOT NULL,
   content TEXT NOT NULL,
   userId INTEGER NOT NULL,
 

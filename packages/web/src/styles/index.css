@@ -1,0 +1,18 @@
+body{
+  background: red;
+}
+.home-page{
+  display: flex;
+  justify-content: end;
+}
+.home-login{
+  width: 500px;
+  margin-left: 100px;
+  height: auto;
+  background: yellow;
+}
+.home-image{
+  background: gray;
+  margin-left: 100px;
+}
+

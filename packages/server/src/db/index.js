@@ -1,9 +1,11 @@
 import path from 'path';
 import sqlite from 'sqlite';
 import Promise from 'bluebird';
+import insert from './insert';
+import find from './find';
+import findOne from './findOne';
 
 export const dbPromise = sqlite.open('redirector.sqlite', { Promise });
-
 
 let dbInstance = null;
 async function getInstance() {
@@ -13,7 +15,11 @@ async function getInstance() {
 
   const db = await dbPromise;
   await db.migrate({ migrationsPath: path.resolve(__dirname, 'migrations') });
-  dbInstance = {};
+  dbInstance = {
+    insert: insert.bind(null, db),
+    find: find.bind(null, db),
+    findOne: findOne.bind(null, db),
+  };
   return dbInstance;
 }
 
