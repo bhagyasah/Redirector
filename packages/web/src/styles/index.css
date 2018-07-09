@@ -1,18 +1,52 @@
 body{
-  background: red;
+  background: #F1F8E9;
 }
 .home-page{
   display: flex;
-  justify-content: end;
+  justify-content: space-around;
 }
 .home-login{
-  width: 500px;
-  margin-left: 100px;
+  width: 400px;
+  margin-top: 100px;
+  text-align: center;
   height: auto;
-  background: yellow;
+  background: white;
 }
-.home-image{
-  background: gray;
-  margin-left: 100px;
+.home-image {
+  width: 600px;
+  height: 500px;
 }
 
+/* horizontal line in the middle of text  */
+.line-center{
+  margin:0;padding:0 10px;
+  background:#fff;
+  display:inline-block;
+}
+hr{
+  background-color: silver;
+}
+h3{
+  text-align:center;
+  position:relative;
+  z-index:2;
+  color: gray;
+}
+h3:after{
+  content:"";
+  position:absolute;
+  top:50%;
+  left:0;
+  right:0;
+  border-top:solid 1px silver;
+  z-index:-1;
+}
+/* ........................................................... */
+
+/* manaul-signup styles */
+  input{
+    margin-bottom: 5px;
+  }
+
+
+/* ...................... */
