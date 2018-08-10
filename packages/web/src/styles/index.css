@@ -1,11 +1,11 @@
-body{
+body {
   background: #F1F8E9;
 }
 .home-page{
   display: flex;
   justify-content: space-around;
 }
-.home-login{
+.home-login {
   width: 400px;
   margin-top: 100px;
   text-align: center;
@@ -48,5 +48,172 @@ h3:after{
     margin-bottom: 5px;
   }
 
-
 /* ...................... */
+
+/* user page stlyes */
+
+/* user container */
+.user-container {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+}
+/* ........................................................ */
+.user-wraper {
+  width: 80%;
+  background:white;
+  height: 1000px;;
+}
+
+.mainuser-footer {
+  width: 100%;
+  background: #008B8B;
+  min-height: 100px;
+}
+.user-menu {
+  width: 100%;
+  background:	#008B8B;
+  min-height: 150px;
+  font-size: 40px;
+  color: white;
+  font-style: inherit;
+}
+
+img {
+border-radius: 50%;
+}
+.user-body {
+  display: flex;
+  background: white;
+}
+
+.user-body-sidebar {
+   flex-grow: 1;
+   font-style: bold;
+   max-height: 400px;
+   background: #008B8B;
+   margin-top: 10px;
+   color: white;
+  }
+  .user-sidebar-menu {
+    background:	#008B8B;
+    color: white;
+    font-size: 20px;
+  }
+
+  .user-profile {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+
+.user-body-content{
+  display: flex;
+  flex-grow: 15;
+  width: 80%;
+  background: white;
+  margin-left: 10px;
+  margin-top: 10px;
+  min-height: 600px;
+  justify-content: center;
+  text-align: center;
+}
+
+.user-body-content-body {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  width: 100%;
+  text-align-last: auto;
+}
+
+.user-body-content-wwboard-list {
+  flex-grow: 15;
+}
+
+.user-body-content-wwboard-control {
+  flex-grow: 0.5;
+  margin-left: 40px;
+  margin-right: 40px;
+  justify-content: right;
+  text-align: right;
+}
+.user-body-content-list {
+  overflow-y: scroll;
+  height: 800px;
+}
+.wwboard-show-list {
+  color: white;
+  margin: 5px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.wwboard-show-message {
+  background: #008B8B;
+  font-size: 15px;
+  padding: 5px;
+  max-width: 80%;
+  height: auto;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2px;
+  border-radius: 10px;
+}
+
+.content-title{
+  background: #008B8B;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.show-contact {
+  display: flex;
+  padding: 10px;
+  font-size: 20px;
+  min-height: 50px;
+  margin-top: 2px;
+  background:#566573;
+  color: white;
+}
+
+ .main-contact {
+  display: flex;
+  padding: 10px;
+  font-size: 20px;
+  min-height: 50px;
+  margin-top: 2px;
+  background:#566573;
+  color: white;
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .show-contact-name {
+  text-align: left;
+  margin-left: 5px;
+  }
+
+  .show-contact-control {
+    width: 100px;
+    margin-top: 50px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .show-callog {
+     margin-left: 5px;
+     text-align: left;
+
+   }
+

@@ -1,3 +1,4 @@
+
 export default async function insert(db, table, values) {
   const fields = Object.keys(values);
   const fieldName = fields.map(f => `[${f}]`).join(',');

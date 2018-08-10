@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Home from './../home';
+import MainUser from './MainUser';
 
 class User extends Component {
   constructor(props) {
@@ -7,8 +9,11 @@ class User extends Component {
   }
 
   render() {
+    console.log('acces token value in main', sessionStorage.getItem('ACCESS_TOKEN'));
     return (
-      <h1>user page</h1>
+      <div>
+        {sessionStorage.getItem('ACCESS_TOKEN') !== 'undefined' ? <MainUser /> : <Home />}
+      </div>
     );
   }
 }

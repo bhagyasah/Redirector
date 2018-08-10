@@ -8,19 +8,37 @@
     "@blueprintjs/icons": "^2.2.1",
     "@blueprintjs/select": "^2.0.1",
     "axios": "^0.18.0",
+    "google-map-react": "^1.0.6",
+    "moment": "^2.22.2",
+    "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-facebook-login": "^4.0.1",
     "react-icons": "^2.2.7",
+    "react-moment": "^0.7.9",
+    "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
-    "react-transition-group": "^2.3.1"
+    "react-scripts": "^1.1.4",
+    "react-transition-group": "^2.3.1",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "socket.io-client": "^2.1.1",
+    "socket.io-react": "^1.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.5",
+    "babel-jest": "^23.2.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-import-export": "^1.0.2",
+    "jest": "^23.2.0"
   },
   "proxy": "http://localhost:4000"
 }

@@ -6,10 +6,16 @@
   "license": "MIT",
   "dependencies": {
     "app-node": "^0.2.5",
+    "babel": "^6.23.0",
     "bluebird": "^3.5.1",
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "lru-cache": "^4.1.3",
+    "node": "^10.8.0",
     "redirector-common": "^1.0.0",
-    "sqlite": "^2.9.2"
+    "socket.io": "^2.1.1",
+    "sqlite": "^2.9.2",
+    "uuid": "^3.3.2"
   },
   "scripts": {
     "test": "jest",
@@ -29,4 +35,3 @@
     "testEnvironment": "node"
   }
 }
-

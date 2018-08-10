@@ -19,7 +19,6 @@ class Login extends Component {
             <FacebookLogin loginStatus={this.state.fblogin} />
             <h3> <span className="line-center"> OR</span></h3>
             <ManualSignUp />
-
           </Card>
         </div>
       </div>

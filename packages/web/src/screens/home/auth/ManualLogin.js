@@ -39,7 +39,7 @@ class ManualLogin extends Component {
             onChange={this.changeInputHandler('password')}
           />
           <br /><br />
-          <Button type="submit" onClick={this.onRegister} className="pt-large" intent={Intent.PRIMARY} fill >Sign Up</Button>
+          <Button type="submit" onClick={this.onRegister} className="pt-large" intent={Intent.PRIMARY} fill >Login</Button>
         </FormGroup>
       </div>
     );

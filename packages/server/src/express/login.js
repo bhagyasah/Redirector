@@ -1,10 +1,14 @@
 import login from './../auth/login';
 
 export default async (req, res) => {
-  console.log('login function called', req);
-  res.send("hlw andrid i get you");
-  const { userId } = req.query;
-  const status = await login(userId);
-  res.send(JSON.stringify(status));
+  try {
+    const record = req.body;
+    // console.log('login route called', record);
+    const status = await login(record);
+    res.send(status);
+  } catch (error) {
+    res.status(500);
+    res.send(error.message);
+  }
 };
 
